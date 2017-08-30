@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: is expected
+# key: isex
+# --
+it { is_expected.to be }

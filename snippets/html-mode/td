@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: html table cell
+# key: td
+# --
+<td>$0</td>

@@ -1,0 +1,12 @@
+*.dat
+backups
+eshell
+ido.*
+auto-save-list
+history
+elpa
+places
+recentf
+smex-items
+themes
+.mc-lists.el
