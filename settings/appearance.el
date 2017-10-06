@@ -1,6 +1,6 @@
 ;; Themes
 
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ;; ;; ;;'(custom-enabled-themes (quote (molokai)))
 
 ;; ;; ;; make the fringe stand out from the background
@@ -32,7 +32,7 @@
 
 (setq sml/no-confirm-load-theme t)
 
-(load-theme 'doom-molokai t)
+(load-theme 'molokai t)
 (sml/setup)
 
 (custom-set-faces
@@ -111,6 +111,17 @@
 (linum-relative-mode)
 
 (setq linum-format "%3d ")
+
+(defun linum-update-window-scale-fix (win)
+  "fix linum for scaled text"
+  (set-window-margins win
+		      (ceiling (* (if (boundp 'text-scale-mode-step)
+				      (expt text-scale-mode-step
+					    text-scale-mode-amount) 1)
+				  (if (car (window-margins))
+				      (car (window-margins)) 1)
+				  ))))
+(advice-add #'linum-update-window :after #'linum-update-window-scale-fix)
 
 (add-to-list 'default-frame-alist '(left-fringe . 8))
 (add-to-list 'default-frame-alist '(right-fringe . 0))
