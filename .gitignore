@@ -1,5 +1,6 @@
 *.dat
 backups
+.saves
 eshell
 ido.*
 auto-save-list
