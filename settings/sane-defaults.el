@@ -157,4 +157,8 @@
 ; Set cursor color
 (set-cursor-color "light blue")
 
+
+;; Silver searcher exectuable
+(setq ag-executable "/usr/local/bin/ag")
+
 (provide 'sane-defaults)
