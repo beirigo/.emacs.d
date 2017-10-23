@@ -29,9 +29,6 @@
 ;; Kill current line
 (global-set-key (kbd "C-S-k") 'kill-whole-line)
 
-;; Fiplr
-(global-set-key (kbd "C-x f") 'fiplr-find-file)
-
 ;; Window move
 (global-set-key (kbd "C-c <left>")  'windmove-left)
 (global-set-key (kbd "C-c <right>") 'windmove-right)

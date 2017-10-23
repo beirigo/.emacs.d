@@ -34,7 +34,7 @@
  '(global-linum-mode t)
  '(package-selected-packages
    (quote
-    (format-sql dart-mode ## smart-mode-line zenburn-theme emmet-mode solarized-theme coffee-mode ag sass-mode auto-complete linum-relative evil-nerd-commenter elixir-mode highlight-indentation yaml-mode undo-tree flycheck smex yasnippet rubocop enh-ruby-mode web-mode fiplr smartparens multiple-cursors ace-jump-mode))))
+    (helm-projectile helm slim-mode format-sql dart-mode ## smart-mode-line zenburn-theme emmet-mode solarized-theme coffee-mode ag sass-mode auto-complete linum-relative evil-nerd-commenter elixir-mode highlight-indentation yaml-mode undo-tree flycheck smex yasnippet rubocop enh-ruby-mode web-mode fiplr smartparens multiple-cursors ace-jump-mode))))
 
 ;; Set up appearance early
 (require 'appearance)
@@ -51,9 +51,6 @@
 
 ;; Setup Enh ruby mode
 (require 'setup-enh-ruby-mode)
-
-;; Setup fiplr
-(require 'setup-fiplr)
 
 ;; Setup Flycheck
 (require 'setup-flycheck)
@@ -75,6 +72,13 @@
 
 ;; Setup smex
 (require 'setup-smex)
+
+;; Setup helm
+(require 'setup-helm)
+
+;; Setup helm-projectile
+(require 'setup-helm-projectile)
+
 
 ;; Sane defaults
 (require 'sane-defaults)
