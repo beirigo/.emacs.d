@@ -4,6 +4,6 @@
 
 (setq projectile-enable-caching t)
 
-(global-set-key (kbd "C-x f") 'helm-projectile)
+(global-set-key (kbd "C-x f") 'helm-projectile-find-file)
 
 (provide 'setup-helm-projectile)

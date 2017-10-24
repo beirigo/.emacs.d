@@ -34,7 +34,7 @@
  '(global-linum-mode t)
  '(package-selected-packages
    (quote
-    (helm-projectile helm slim-mode format-sql dart-mode ## smart-mode-line zenburn-theme emmet-mode solarized-theme coffee-mode ag sass-mode auto-complete linum-relative evil-nerd-commenter elixir-mode highlight-indentation yaml-mode undo-tree flycheck smex yasnippet rubocop enh-ruby-mode web-mode fiplr smartparens multiple-cursors ace-jump-mode))))
+    (helm-projectile helm slim-mode format-sql dart-mode ## smart-mode-line zenburn-theme emmet-mode solarized-theme coffee-mode ag sass-mode linum-relative evil-nerd-commenter elixir-mode highlight-indentation yaml-mode undo-tree flycheck smex yasnippet rubocop enh-ruby-mode web-mode smartparens multiple-cursors ace-jump-mode))))
 
 ;; Set up appearance early
 (require 'appearance)
@@ -66,9 +66,6 @@
 
 ;; Setup evil-nerd-commenter
 (require 'setup-evil-nerd-commenter)
-
-;;Setup auto-complete-mode
-(require 'setup-auto-complete-mode)
 
 ;; Setup smex
 (require 'setup-smex)
