@@ -42,9 +42,25 @@
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 ;; Comment/uncomment line override
-(global-set-key (kbd "M-;") 'comment-or-uncomment-region-or-line)
+(global-set-key (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
+(global-set-key (kbd "C-c C-p") 'evilnc-comment-or-uncomment-paragraphs)
+
 ;; Smex
 (global-set-key (kbd "M-x") 'smex)
+
+;; Ivy
+(global-set-key (kbd "C-s") 'swiper)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+;; (global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "C-x f") 'counsel-projectile-find-file)
+(global-set-key (kbd "<f1> f") 'counsel-describe-function)
+(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+(global-set-key (kbd "<f1> l") 'counsel-find-library)
+(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c k") 'my/counsel-ag-in-project)
+
+(global-set-key (kbd "C-c r") 'sp-rewrap-sexp)
 
 (provide 'key-bindings)
 

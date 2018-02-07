@@ -161,4 +161,6 @@
 ;; Silver searcher exectuable
 (setq ag-executable "/usr/local/bin/ag")
 
+(setq counsel-ag-base-command "/usr/local/bin/ag --nocolor --nogroup %s")
+
 (provide 'sane-defaults)

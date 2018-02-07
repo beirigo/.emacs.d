@@ -34,7 +34,7 @@
  '(global-linum-mode t)
  '(package-selected-packages
    (quote
-    (helm-projectile helm slim-mode format-sql dart-mode ## smart-mode-line zenburn-theme emmet-mode solarized-theme coffee-mode ag sass-mode linum-relative evil-nerd-commenter elixir-mode highlight-indentation yaml-mode undo-tree flycheck smex yasnippet rubocop enh-ruby-mode web-mode smartparens multiple-cursors ace-jump-mode))))
+    (counsel-projectile counsel counsel-ebdb ivy slim-mode format-sql dart-mode ## smart-mode-line zenburn-theme emmet-mode solarized-theme coffee-mode ag sass-mode evil-nerd-commenter elixir-mode highlight-indentation yaml-mode undo-tree flycheck smex yasnippet rubocop enh-ruby-mode web-mode smartparens multiple-cursors ace-jump-mode))))
 
 ;; Set up appearance early
 (require 'appearance)
@@ -45,9 +45,6 @@
 ;; Move windows
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
-
-;; Setup Key-bindings
-(require 'key-bindings)
 
 ;; Setup Enh ruby mode
 (require 'setup-enh-ruby-mode)
@@ -64,18 +61,17 @@
 ;; Setup Smartparens
 (require 'setup-smartparens)
 
-;; Setup evil-nerd-commenter
-(require 'setup-evil-nerd-commenter)
-
 ;; Setup smex
 (require 'setup-smex)
 
-;; Setup helm
-(require 'setup-helm)
+;; Setup ivy
+(require 'setup-ivy)
 
-;; Setup helm-projectile
-(require 'setup-helm-projectile)
+;; Setup evil-nerd-commenter
+(require 'setup-evil-nerd-commenter)
 
+;; Setup Key-bindings
+(require 'key-bindings)
 
 ;; Sane defaults
 (require 'sane-defaults)

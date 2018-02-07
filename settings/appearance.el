@@ -43,11 +43,11 @@
  '(flycheck-warning  ((t (:background nil :foreground nil :distant-foreground "#666699"))))
  '(region ((t (:background "#4e4e4e" :foreground nil :distant-foreground "#666699")))))
 
-(add-to-list 'default-frame-alist '(height . 40))
-(add-to-list 'default-frame-alist '(width . 150))
+(add-to-list 'default-frame-alist '(height . 90))
+(add-to-list 'default-frame-alist '(width . 180))
 
 ;; initial window
-(setq initial-frame-alist '((width . 150) (height . 40)))
+(setq initial-frame-alist '((width . 180) (height . 90)))
 
 ;; (setq font-lock-maximum-decoration t
 ;;       color-theme-is-global t
@@ -97,7 +97,7 @@
   (when (file-directory-p path)
     (add-to-list 'custom-theme-load-path path)))
 
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 200)
 
 (setq visible-bell nil)
 (setq ring-bell-function (lambda ()
